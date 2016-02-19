@@ -122,7 +122,7 @@ comes out of the function:
 ~~~ {.python}
 
 beta1_ortho, beta0_ortho = np.polyfit(x_ortho, y_ortho, 1)
-beta1_para, beta1_para = np.polyfit(x_para, y_para, 1)
+beta1_para, beta0_para = np.polyfit(x_para, y_para, 1)
 
 ~~~
 
@@ -191,7 +191,7 @@ pse_para = (0.5 - beta0_para)/beta1_para
 ## Evaluating models
 
 How good is the model? Let's look at the model "residuals", the difference
-between the model and the measured data:
+between the predictions and the measured data:
 
 ![Model residuals](img/figure5.png)
 
